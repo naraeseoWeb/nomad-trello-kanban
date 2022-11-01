@@ -1,8 +1,9 @@
 import React from 'react';
-import ReactDOM, { createRoot } from 'react-dom/client';
+import { createRoot } from 'react-dom/client';
 import { RecoilRoot } from 'recoil';
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import App from './App';
+import { lightMode } from './theme';
 
 const GlobalStyle = createGlobalStyle`
 html, body, div, span, applet, object, iframe,
@@ -73,8 +74,10 @@ const root = createRoot(document.getElementById('root') as HTMLElement);
 root.render(
   <React.StrictMode>
     <RecoilRoot>
-      <GlobalStyle />
-      <App />
+      <ThemeProvider theme={lightMode}>
+        <GlobalStyle />
+        <App />
+      </ThemeProvider>
     </RecoilRoot>
   </React.StrictMode>
 );
