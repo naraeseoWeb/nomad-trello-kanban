@@ -12,6 +12,8 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 `;
 
 const Boards = styled.div`

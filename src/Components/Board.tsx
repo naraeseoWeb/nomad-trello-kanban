@@ -35,7 +35,7 @@ const Board = ({ toDos, boardId }: IBoardProps) => {
   return (
     <Wrapper>
       <Title>{boardId}</Title>
-      <Droppable droppableId='one'>
+      <Droppable droppableId={boardId}>
         {(magic) => (
           <Area ref={magic.innerRef} {...magic.droppableProps}>
             {toDos.map((toDo, index) => (
