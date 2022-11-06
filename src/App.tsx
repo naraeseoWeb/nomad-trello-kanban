@@ -56,7 +56,6 @@ const App = () => {
       });
     }
   };
-  console.log(toDos, 'toDos');
 
   return (
     <DragDropContext onDragEnd={onDragEnd}>
