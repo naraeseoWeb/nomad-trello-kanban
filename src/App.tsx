@@ -1,5 +1,4 @@
 import { DragDropContext, DropResult } from '@hello-pangea/dnd';
-import React from 'react';
 import { useRecoilState } from 'recoil';
 import styled from 'styled-components';
 import { toDoState } from './atoms';
