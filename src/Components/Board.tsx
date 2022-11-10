@@ -40,6 +40,7 @@ const Area = styled.div<IAreaProps>`
       : 'transparent'};
   flex-grow: 1;
   transition: background-color 0.3s ease-in-out;
+  padding: 20px;
 `;
 
 const Board = ({ toDos, boardId }: IBoardProps) => {
